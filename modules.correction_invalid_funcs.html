@@ -1,0 +1,221 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>modules.correction_invalid_funcs module &mdash; documentación de Nueva_Critica_Actos - 0.1</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=9c9b61ad"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=f85f4cfb"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="modules.correction_quantity_funcs module" href="modules.correction_quantity_funcs.html" />
+    <link rel="prev" title="modules.correction_funcs module" href="modules.correction_funcs.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Nueva_Critica_Actos
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">modules package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="modules.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="modules.autosearch_funcs.html">modules.autosearch_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.aux_funcs.html">modules.aux_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.bad_doms_funcs.html">modules.bad_doms_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.command_funcs.html">modules.command_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.consistencias.html">modules.consistencias module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.consistent_funcs.html">modules.consistent_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.correction_fc1_fc2_funcs.html">modules.correction_fc1_fc2_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.correction_fc1_fc2_Q_funcs.html">modules.correction_fc1_fc2_Q_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.correction_fc2_fc1_funcs.html">modules.correction_fc2_fc1_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.correction_funcs.html">modules.correction_funcs module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">modules.correction_invalid_funcs module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#modules.correction_invalid_funcs.Aj_FC2_under04"><code class="docutils literal notranslate"><span class="pre">Aj_FC2_under04()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modules.correction_invalid_funcs.dispersion_best_prices"><code class="docutils literal notranslate"><span class="pre">dispersion_best_prices()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modules.correction_invalid_funcs.dispersion_conditions"><code class="docutils literal notranslate"><span class="pre">dispersion_conditions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modules.correction_invalid_funcs.dispersion_vars"><code class="docutils literal notranslate"><span class="pre">dispersion_vars()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modules.correction_invalid_funcs.envsd_invalid_conditions"><code class="docutils literal notranslate"><span class="pre">envsd_invalid_conditions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modules.correction_invalid_funcs.envsd_invalid_conditions2"><code class="docutils literal notranslate"><span class="pre">envsd_invalid_conditions2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modules.correction_invalid_funcs.envsd_invalid_conditions3"><code class="docutils literal notranslate"><span class="pre">envsd_invalid_conditions3()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modules.correction_invalid_funcs.envsd_invalid_correction"><code class="docutils literal notranslate"><span class="pre">envsd_invalid_correction()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modules.correction_invalid_funcs.envsd_invalid_correction2"><code class="docutils literal notranslate"><span class="pre">envsd_invalid_correction2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modules.correction_invalid_funcs.envsd_invalid_vars"><code class="docutils literal notranslate"><span class="pre">envsd_invalid_vars()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modules.correction_invalid_funcs.invalid_main"><code class="docutils literal notranslate"><span class="pre">invalid_main()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modules.correction_quantity_funcs.html">modules.correction_quantity_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.correction_unipack_funcs.html">modules.correction_unipack_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.create_df.html">modules.create_df module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.dtype_adj_funcs.html">modules.dtype_adj_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.filter_funcs.html">modules.filter_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.get_references_funcs.html">modules.get_references_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.granel_funcs.html">modules.granel_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.initiate_all.html">modules.initiate_all module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.kit_table_creation_funcs.html">modules.kit_table_creation_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.memory_aux_funcs.html">modules.memory_aux_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.mod_funcs.html">modules.mod_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.modas_funcs.html">modules.modas_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.pers_funcs.html">modules.pers_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.pper_extract_funcs.html">modules.pper_extract_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.pper_funcs.html">modules.pper_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.principal_funcs.html">modules.principal_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.reading_queries_funcs.html">modules.reading_queries_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.reference_table_creation_funcs.html">modules.reference_table_creation_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.revcorr_params.html">modules.revcorr_params module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.revision_col_str_funcs.html">modules.revision_col_str_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.revision_funcs.html">modules.revision_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.search_articles_funcs.html">modules.search_articles_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.testparams.html">modules.testparams module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.tosql_funcs.html">modules.tosql_funcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.vw_corresp_funcs.html">modules.vw_corresp_funcs module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="core_modules.html">core_modules package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Nueva_Critica_Actos</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">modules package</a></li>
+      <li class="breadcrumb-item active">modules.correction_invalid_funcs module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/modules.correction_invalid_funcs.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-modules.correction_invalid_funcs">
+<span id="modules-correction-invalid-funcs-module"></span><h1>modules.correction_invalid_funcs module<a class="headerlink" href="#module-modules.correction_invalid_funcs" title="Link to this heading"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="modules.correction_invalid_funcs.Aj_FC2_under04">
+<span class="sig-prename descclassname"><span class="pre">modules.correction_invalid_funcs.</span></span><span class="sig-name descname"><span class="pre">Aj_FC2_under04</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modules/correction_invalid_funcs.html#Aj_FC2_under04"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modules.correction_invalid_funcs.Aj_FC2_under04" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="modules.correction_invalid_funcs.dispersion_best_prices">
+<span class="sig-prename descclassname"><span class="pre">modules.correction_invalid_funcs.</span></span><span class="sig-name descname"><span class="pre">dispersion_best_prices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df_P_disp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pers_disp_inv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rc</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modules/correction_invalid_funcs.html#dispersion_best_prices"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modules.correction_invalid_funcs.dispersion_best_prices" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="modules.correction_invalid_funcs.dispersion_conditions">
+<span class="sig-prename descclassname"><span class="pre">modules.correction_invalid_funcs.</span></span><span class="sig-name descname"><span class="pre">dispersion_conditions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df_P_disp_inv</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modules/correction_invalid_funcs.html#dispersion_conditions"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modules.correction_invalid_funcs.dispersion_conditions" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="modules.correction_invalid_funcs.dispersion_vars">
+<span class="sig-prename descclassname"><span class="pre">modules.correction_invalid_funcs.</span></span><span class="sig-name descname"><span class="pre">dispersion_vars</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df_P_disp_inv</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modules/correction_invalid_funcs.html#dispersion_vars"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modules.correction_invalid_funcs.dispersion_vars" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="modules.correction_invalid_funcs.envsd_invalid_conditions">
+<span class="sig-prename descclassname"><span class="pre">modules.correction_invalid_funcs.</span></span><span class="sig-name descname"><span class="pre">envsd_invalid_conditions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df_envsd_invalid</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modules/correction_invalid_funcs.html#envsd_invalid_conditions"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modules.correction_invalid_funcs.envsd_invalid_conditions" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="modules.correction_invalid_funcs.envsd_invalid_conditions2">
+<span class="sig-prename descclassname"><span class="pre">modules.correction_invalid_funcs.</span></span><span class="sig-name descname"><span class="pre">envsd_invalid_conditions2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df_envsd_invalid</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modules/correction_invalid_funcs.html#envsd_invalid_conditions2"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modules.correction_invalid_funcs.envsd_invalid_conditions2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="modules.correction_invalid_funcs.envsd_invalid_conditions3">
+<span class="sig-prename descclassname"><span class="pre">modules.correction_invalid_funcs.</span></span><span class="sig-name descname"><span class="pre">envsd_invalid_conditions3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df_envsd</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modules/correction_invalid_funcs.html#envsd_invalid_conditions3"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modules.correction_invalid_funcs.envsd_invalid_conditions3" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="modules.correction_invalid_funcs.envsd_invalid_correction">
+<span class="sig-prename descclassname"><span class="pre">modules.correction_invalid_funcs.</span></span><span class="sig-name descname"><span class="pre">envsd_invalid_correction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df_envsd_invalid</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modules/correction_invalid_funcs.html#envsd_invalid_correction"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modules.correction_invalid_funcs.envsd_invalid_correction" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="modules.correction_invalid_funcs.envsd_invalid_correction2">
+<span class="sig-prename descclassname"><span class="pre">modules.correction_invalid_funcs.</span></span><span class="sig-name descname"><span class="pre">envsd_invalid_correction2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df_envsd</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modules/correction_invalid_funcs.html#envsd_invalid_correction2"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modules.correction_invalid_funcs.envsd_invalid_correction2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="modules.correction_invalid_funcs.envsd_invalid_vars">
+<span class="sig-prename descclassname"><span class="pre">modules.correction_invalid_funcs.</span></span><span class="sig-name descname"><span class="pre">envsd_invalid_vars</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df_envsd</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modules/correction_invalid_funcs.html#envsd_invalid_vars"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modules.correction_invalid_funcs.envsd_invalid_vars" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="modules.correction_invalid_funcs.invalid_main">
+<span class="sig-prename descclassname"><span class="pre">modules.correction_invalid_funcs.</span></span><span class="sig-name descname"><span class="pre">invalid_main</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df_P_inv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">df_P_disp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pers_disp_inv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rc</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modules/correction_invalid_funcs.html#invalid_main"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modules.correction_invalid_funcs.invalid_main" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="modules.correction_funcs.html" class="btn btn-neutral float-left" title="modules.correction_funcs module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="modules.correction_quantity_funcs.html" class="btn btn-neutral float-right" title="modules.correction_quantity_funcs module" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2025, Luan Martins Correa.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
